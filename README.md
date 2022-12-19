@@ -1,6 +1,6 @@
 #Personal Portfolio
 
-![Website Screenshot] (/media/screenshot.png)
+![Website Screenshot] (media/screenshot.png)
 
 ## Hello There
 This is the first version of my personal portfolio coded in HTML5, CSS3, and JS. 
