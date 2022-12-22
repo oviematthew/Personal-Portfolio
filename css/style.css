@@ -243,31 +243,33 @@ li a {
     transition: all 1s ease-in-out;
     direction: rtl;
     display: none;
+    margin-top: 5px;
 }
 
 .hamburger-menu {
     
     background-color: var(--hamburger-color);
     left: 0;
-    width: 20px;
-    height: 4px;
+    height: 3px;
     border-radius: 8px;
     margin-bottom: 5px;
     transition: 0.4s;
 }
 
+/* Middle  */
 .hamburger-menu:nth-child(2) {
     padding-right: 0;
-    width: 40px;
-}
-
-.hamburger-menu:nth-child(1) {
-    margin-right: 5px;
     width: 30px;
 }
 
+
+/* Top */
+.hamburger-menu:nth-child(1) {
+    width: 30px;
+}
+
+/* Bottom */
 .hamburger-menu:nth-child(3) {
-    margin-right: 5px;
     width: 30px;
 }
 /* header responsive styles */
