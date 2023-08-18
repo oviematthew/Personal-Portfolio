@@ -731,7 +731,7 @@ u:hover {
 }
 
 
-/* skills section */
+/* experience section */
 
 .experience-heading {
     color: var(--text-color);
@@ -739,11 +739,35 @@ u:hover {
     font-weight: 700;
     font-size: 22px;
 }
+.experience-description {
+    color: var(--text-color);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    
+}
+
+.experience-row {
+    display: flex;
+}
 
 .experience-left{
     margin-top: 30px;
 }
-/* skill section end */
+
+@media screen and (max-width:779px) {
+
+    #experience{
+        padding: 30px;
+        text-align: justify;
+    }
+
+   
+
+    
+
+}
+/* experience section end */
 
 /* Project Section */
 #projects {
@@ -797,6 +821,7 @@ u:hover {
 
 .tags {
     display: flex;
+    width: 80%;
     gap: 10px;
 }
 
