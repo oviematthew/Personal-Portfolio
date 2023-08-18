@@ -730,6 +730,21 @@ u:hover {
 
 }
 
+
+/* skills section */
+
+.experience-heading {
+    color: var(--text-color);
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.experience-left{
+    margin-top: 30px;
+}
+/* skill section end */
+
 /* Project Section */
 #projects {
     height: max-content;
