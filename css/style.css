@@ -602,8 +602,10 @@ u:hover {
 
 .about-hr {
     color: var(--text-color);
-    width: 30%;
-    margin-top: 20px;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
     transition: all 1s ease-in-out;
 }
 
