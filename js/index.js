@@ -131,6 +131,7 @@ window.addEventListener('mouseup', function(event){
 
 // video embeds
 document.addEventListener("DOMContentLoaded", function () {
+  // hangman
  $('body')
  .on('click', '#hangmanLaunch', function () {
    var hangmanVideoID = $(this).data('vimeo-id'),
@@ -149,11 +150,33 @@ document.addEventListener("DOMContentLoaded", function () {
    });
  } );
 
-
+// Weather app
  $('body')
  .on('click', '#weatherAppLaunch', function () {
    var weatherVideoID = $(this).data('vimeo-id'),
        $video = '<div id="vimeo-pop-container"><div><span class="vimeo-close"></span><iframe src="https://player.vimeo.com/video/898651311?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="weather-app"></iframe></div></div>';
+   $('body').append($video);
+ } )
+ 
+ .on('click', '.vimeo-close', function () {
+   $(this).addClass('closing');
+ 
+   $('#vimeo-pop-container').delay(700).animate({
+     height: 0,
+     top: '50%'
+   }, 'fast', function () {
+     $('#vimeo-pop-container').remove();
+   });
+ } );
+
+
+
+ 
+ //Todo app
+ $('body')
+ .on('click', '#todoLaunch', function () {
+   var todoVideoID = $(this).data('vimeo-id'),
+       $video = '<div id="vimeo-pop-container"><div><span class="vimeo-close"></span><iframe src="https://player.vimeo.com/video/898803877?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="todo-app-demo"></iframe></div></div>';
    $('body').append($video);
  } )
  
