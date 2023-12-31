@@ -741,6 +741,11 @@ u:hover {
 
 /* experience section */
 
+#experience {
+    height: max-content;
+    padding: 100px 0;
+}
+
 .experience-heading {
     color: var(--text-color);
     margin-top: 30px;
