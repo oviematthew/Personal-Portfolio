@@ -1,3 +1,11 @@
+//play name
+document.getElementById('playButton').addEventListener('click', function () {
+  var audioElement = new Audio(this.getAttribute('data-audio'));
+
+  // Play the audio
+  audioElement.play();
+});
+
 const hamburger = document.getElementById("hamburger");
 const naviMenu = document.getElementById("navi-menu");
 const menu1 = document.getElementById("menu1");
