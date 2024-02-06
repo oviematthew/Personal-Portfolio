@@ -808,6 +808,19 @@ u:hover {
     transition: all 0.3s ease-in-out;
 }
 
+.project-filter {
+    color: #fff;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 30px;
+}
+
+@media  screen and (max-width: 779px) {
+    .project-filter{
+        text-align: center;
+    }
+}
+
 .port-card:hover {
     border: 2px solid var(--text-color);
 }
