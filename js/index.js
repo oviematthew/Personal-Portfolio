@@ -118,12 +118,13 @@ function backToTop() {
 
 const load = document.getElementById("load");
 const loadButton = document.getElementById("loadmore");
+const loadLessBtn = document.getElementById("loadless");
 const moreSection = document.getElementById("more-section");
 
 
 
 
-window.addEventListener('mouseup', function(event){
+window.addEventListener('mouseup', function(){
 
   // On click of hamburger icons, toggle active menu and toggle hamburger classes
   loadButton.addEventListener("click", function () {
@@ -135,6 +136,14 @@ window.addEventListener('mouseup', function(event){
 
 });
 
+
+loadLessBtn.addEventListener("click", function () {
+
+    setTimeout(function(){
+    moreSection.style.display = "none";
+  },200); 
+
+});
 });
 
 // video embeds
