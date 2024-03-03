@@ -141,6 +141,7 @@ loadLessBtn.addEventListener("click", function () {
 
     setTimeout(function(){
     moreSection.style.display = "none";
+    load.style.display = "flex";
   },200); 
 
 });
