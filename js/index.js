@@ -57,32 +57,6 @@ toggle.onclick=function(){
 }
 
 
-//ALTERNATE DARK-MODE-SWITCH
-
-
-// const toggleicon = document.getElementById("toggleicon");
-//   toggleicon.onclick=function(){
-
-//     document.body.classList.toggle("dark-mode");
-
-    
-//     if(document.body.classList.contains("dark-mode")){
-//         toggleicon.classList.add("active");
-//         toggleicon.classList.remove("fa-sun");
-//         toggleicon.classList.add("fa-moon");
-        
-       
-//     }else{
-//         toggleicon.classList.add("fa-sun");
-//         toggleicon.classList.remove("active");
-//         toggleicon.classList.remove("fa-moon");
-        
-//     }
-
-// }
-
-
-
 const mybutton = document.getElementById("btn-back-to-top");
 
 // When the user scrolls down 20px from the top of the document, show the button
@@ -108,10 +82,6 @@ function backToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
-
-
-
 
 
 // Load More feature
@@ -209,5 +179,22 @@ document.addEventListener("DOMContentLoaded", function () {
    });
  } );
 });
- 
 
+ //Yelpiee App
+ $('body')
+ .on('click', '#yelpieeLaunch', function () {
+   var yelpieeVideoID = $(this).data('vimeo-id'),
+       $video = '<div id="vimeo-pop-container"><div><span class="vimeo-close"></span><iframe src="https://player.vimeo.com/video/923078385?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="todo-app-demo"></iframe></div></div>';
+   $('body').append($video);
+ } )
+ 
+ .on('click', '.vimeo-close', function () {
+   $(this).addClass('closing');
+ 
+   $('#vimeo-pop-container').delay(700).animate({
+     height: 0,
+     top: '50%'
+   }, 'fast', function () {
+     $('#vimeo-pop-container').remove();
+   });
+ } );
