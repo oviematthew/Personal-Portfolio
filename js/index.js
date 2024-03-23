@@ -1,29 +1,29 @@
 //lazy load images
-document.addEventListener("DOMContentLoaded", function () {
-  var lazyImages = document.querySelectorAll("img");
+// document.addEventListener("DOMContentLoaded", function () {
+//   var lazyImages = document.querySelectorAll("img");
 
-  // IntersectionObserver for lazy loading
-  var lazyImageObserver = new IntersectionObserver(function (
-    entries,
-    observer
-  ) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        var lazyImage = entry.target;
-        lazyImage.src = lazyImage.getAttribute("data-src");
-        lazyImage.removeAttribute("data-src");
-        lazyImageObserver.unobserve(lazyImage);
-      }
-    });
-  });
+//   // IntersectionObserver for lazy loading
+//   var lazyImageObserver = new IntersectionObserver(function (
+//     entries,
+//     observer
+//   ) {
+//     entries.forEach(function (entry) {
+//       if (entry.isIntersecting) {
+//         var lazyImage = entry.target;
+//         lazyImage.src = lazyImage.getAttribute("data-src");
+//         lazyImage.removeAttribute("data-src");
+//         lazyImageObserver.unobserve(lazyImage);
+//       }
+//     });
+//   });
 
-  // Observe each image
-  lazyImages.forEach(function (lazyImage) {
-    lazyImage.setAttribute("data-src", lazyImage.src);
-    lazyImage.removeAttribute("src");
-    lazyImageObserver.observe(lazyImage);
-  });
-});
+//   // Observe each image
+//   lazyImages.forEach(function (lazyImage) {
+//     lazyImage.setAttribute("data-src", lazyImage.src);
+//     lazyImage.removeAttribute("src");
+//     lazyImageObserver.observe(lazyImage);
+//   });
+// });
 
 //play name
 function playAudio() {
